@@ -8,122 +8,73 @@
   <style>
     :root {
       color-scheme: light;
-      --ink: #172033;
-      --muted: #5f6b7a;
-      --line: #dce3ec;
-      --accent: #2457a6;
-      --accent-soft: #eef4ff;
-      --paper: #ffffff;
-      --background: #f6f8fb;
+      --text: #1f1f1f;
+      --muted: #5a5a5a;
+      --line: #d8d8d8;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: var(--background);
-      color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      line-height: 1.6;
+      background: #ffffff;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
     }
 
     main {
-      width: min(720px, calc(100% - 2rem));
+      width: min(700px, calc(100% - 3rem));
       margin: 0 auto;
       padding: 4.5rem 0 3rem;
     }
 
-    .card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      box-shadow: 0 12px 36px rgba(23, 32, 51, 0.07);
-      padding: clamp(1.5rem, 5vw, 3rem);
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      margin: 0 0 0.75rem;
-      text-transform: uppercase;
-    }
-
     h1 {
-      font-size: clamp(2.2rem, 7vw, 3.5rem);
-      letter-spacing: -0.04em;
-      line-height: 1.05;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 7vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
       margin: 0;
     }
 
     .role {
       color: var(--muted);
-      font-size: 1.1rem;
-      margin: 0.9rem 0 0;
+      margin: 0.6rem 0 0;
     }
 
     section {
       border-top: 1px solid var(--line);
-      margin-top: 2rem;
-      padding-top: 1.5rem;
+      margin-top: 2.25rem;
+      padding-top: 1.25rem;
     }
 
     h2 {
-      font-size: 1rem;
-      letter-spacing: 0.02em;
-      margin: 0 0 0.65rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0 0 0.55rem;
     }
 
-    p { margin: 0; }
-
-    .interests {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 0.85rem;
-    }
-
-    .tag {
-      background: var(--accent-soft);
-      border-radius: 999px;
-      color: var(--accent);
-      font-size: 0.92rem;
-      padding: 0.35rem 0.8rem;
-    }
-
-    .contact {
-      background: #fbfcfe;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      display: grid;
-      gap: 0.45rem;
-      padding: 1rem;
-    }
-
-    .email {
-      color: var(--accent);
-      font-weight: 650;
-    }
+    p { margin: 0 0 0.45rem; }
 
     a {
-      color: var(--accent);
-      text-underline-offset: 0.18em;
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
     }
 
     footer {
       color: var(--muted);
       font-size: 0.85rem;
-      margin-top: 1.75rem;
-      text-align: center;
+      margin-top: 2.5rem;
     }
   </style>
 </head>
 <body>
   <main>
-    <article class="card">
-      <p class="eyebrow">Academic homepage</p>
+    <article>
       <h1>Jin Liu</h1>
       <p class="role">Master of Artificial Intelligence student at the University of Auckland</p>
 
@@ -136,18 +87,13 @@
 
       <section aria-labelledby="interests-heading">
         <h2 id="interests-heading">Research interests</h2>
-        <div class="interests" aria-label="Research interests">
-          <span class="tag">Artificial Intelligence</span>
-          <span class="tag">Mathematics</span>
-        </div>
+        <p>Artificial Intelligence · Mathematics</p>
       </section>
 
       <section aria-labelledby="contact-heading">
         <h2 id="contact-heading">Contact</h2>
-        <div class="contact">
-          <p>Email: <a class="email" href="mailto:jilu270@aucklanduni.ac.nz">jilu270@aucklanduni.ac.nz</a></p>
-          <p>GitHub: <a href="https://github.com/JinLiu-GinLeo">github.com/JinLiu-GinLeo</a></p>
-        </div>
+        <p>Email: <a href="mailto:jilu270@aucklanduni.ac.nz">jilu270@aucklanduni.ac.nz</a></p>
+        <p>GitHub: <a href="https://github.com/JinLiu-GinLeo">github.com/JinLiu-GinLeo</a></p>
       </section>
     </article>
 
